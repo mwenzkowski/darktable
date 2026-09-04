@@ -219,6 +219,11 @@ changes (where available).
 - Fixed a small memory leak each time a history stack was pasted onto the
   image open in darkroom.
 
+- Corrected the reference colors for the Datacolor SpyderCheckr Photo
+  target, which carried the SpyderCheckr 48 patch values rather than
+  its own. Profiling that chart with color calibration now measures
+  against the colors it actually has, lowering the reported delta E.
+
 ## Lua
 
 ### API Version
